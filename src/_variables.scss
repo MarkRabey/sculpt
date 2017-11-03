@@ -34,6 +34,7 @@ $dark:          $gray-800 !default;
 
 // Body
 
+$body-bg:                   $white !default;
 $body-color:                $gray-800 !default;
 
 // Links
@@ -43,8 +44,18 @@ $link-color:                $success !default;
 // Fonts
 $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:400,500,700" !default;
 @import url($web-font-path);
+
 $font-family-sans-serif:      "Roboto", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
 $font-size-base:              .875rem !default;
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
 
 $headings-font-weight:        400 !default;

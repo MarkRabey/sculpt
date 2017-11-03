@@ -1,6 +1,7 @@
 // stylelint-disable
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+// Altered as needed
 
 /* Document
    ========================================================================== */
@@ -21,11 +22,20 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers (opinionated).
+ * 1. Remove the margin in all browsers (opinionated).
+ * 2. Apply default background colour (best practice)
+ * 3. Explicit initial text-align so we can use 'inherit'
  */
 
 body {
-  margin: 0;
+  margin: 0; // 1
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  text-align: left; // 3
+  background-color: $body-bg; // 2
 }
 
 /**
@@ -445,5 +455,5 @@ template {
  */
 
 [hidden] {
-  display: none;
+  display: none !important;
 }

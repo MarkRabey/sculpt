@@ -3,11 +3,7 @@
  * Copyright 2017 Mark Rabey <mark@markrabey.com>
  * Licensed under MIT (https://github.com/MarkRabey/sculpt/blob/master/LICENSE)
  */
-/**
- * Sculpt
- * Copyright 2017 Mark Rabey <mark@markrabey.com>
- * Licensed under MIT (https://github.com/MarkRabey/sculpt/blob/master/LICENSE)
- */
+/* Sculpt */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -29,10 +25,19 @@ html {
 /* Sections
    ========================================================================== */
 /**
- * Remove the margin in all browsers (opinionated).
+ * 1. Remove the margin in all browsers (opinionated).
+ * 2. Apply default background colour (best practice)
+ * 3. Explicit initial text-align so we can use 'inherit'
  */
 body {
   margin: 0;
+  font-family: "Roboto", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3e3f3a;
+  text-align: left;
+  background-color: #fff;
 }
 
 /**
@@ -444,6 +449,6 @@ template {
  * Add the correct display in IE 10-.
  */
 [hidden] {
-  display: none;
+  display: none !important;
 }
 /*# sourceMappingURL=sculpt.css.map */
