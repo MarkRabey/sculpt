@@ -1,2 +1,2 @@
-# sculpt
+# Scuplt
 Another CSS Framework.
