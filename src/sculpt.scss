@@ -1,5 +1,8 @@
-$color: #f00;
-body {
-  color: $color;
-  transition: all .3s;
-}
+/**
+ * Sculpt
+ * Copyright 2017 Mark Rabey <mark@markrabey.com>
+ * Licensed under MIT (https://github.com/MarkRabey/sculpt/blob/master/LICENSE)
+ */
+
+@import "variables";
+@import "normalize";
