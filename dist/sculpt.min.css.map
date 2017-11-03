@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/sculpt.scss"],"names":[],"mappings":"AACA,KACE,MAAA","sourcesContent":["$color: #f00;\nbody {\n  color: $color;\n}\n"]}

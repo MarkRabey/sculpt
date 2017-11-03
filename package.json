@@ -4,6 +4,12 @@
   "description": "Another CSS Framework.",
   "main": "index.js",
   "scripts": {
+    "css": "npm-run-all --parallel css-lint css-compile --sequential css-prefix css-minify",
+    "css-lint": "stylelint --config .stylelintrc --syntax scss \"src/**/*.scss\"",
+    "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 ./src/sculpt.scss ./dist/sculpt.css",
+    "css-prefix": "postcss --config postcss.config.js --replace \"dist/*.css\"",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/sculpt.min.css dist/sculpt.css",
+    "watch": "nodemon --ignore dist/ -e scss -x \"npm run css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +22,17 @@
   "bugs": {
     "url": "https://github.com/MarkRabey/sculpt/issues"
   },
-  "homepage": "https://github.com/MarkRabey/sculpt#readme"
+  "homepage": "https://github.com/MarkRabey/sculpt#readme",
+  "devDependencies": {
+    "clean-css-cli": "^4.1.10",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1",
+    "stylelint": "^8.2.0",
+    "stylelint-config-recommended-scss": "^2.0.0",
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-order": "^0.7.0",
+    "stylelint-scss": "^2.1.0"
+  }
 }
