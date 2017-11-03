@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/sculpt.scss"],"names":[],"mappings":"AACA,KACE,MAAA","sourcesContent":["$color: #f00;\nbody {\n  color: $color;\n}\n"]}
+{"version":3,"sources":["<no source>","../src/sculpt.scss"],"names":[],"mappings":"AAAA;;;;ACCA,KACE,MAAA,IACA,mBAAA,IAAA,IAAA,WAAA,IAAA","sourcesContent":[null,"$color: #f00;\nbody {\n  color: $color;\n  transition: all .3s;\n}\n"]}

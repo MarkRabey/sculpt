@@ -1,4 +1,11 @@
+/*!
+ * Sculpt v1.0.0
+ * Copyright 2017 Mark Rabey<mark@markrabey.com>
+ * Licensed under MIT (https://github.com/MarkRabey/sculpt/blob/master/LICENSE)
+ */
 body {
   color: #f00;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 /*# sourceMappingURL=sculpt.css.map */

@@ -1,6 +1,6 @@
 {
   "name": "sculpt",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Another CSS Framework.",
   "main": "index.js",
   "scripts": {
@@ -17,17 +17,19 @@
     "url": "git+https://github.com/MarkRabey/sculpt.git"
   },
   "keywords": [],
-  "author": "Mark Rabey<mark@markrabey.com>",
+  "author": "Mark Rabey <mark@markrabey.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MarkRabey/sculpt/issues"
   },
   "homepage": "https://github.com/MarkRabey/sculpt#readme",
   "devDependencies": {
+    "autoprefixer": "^7.1.6",
     "clean-css-cli": "^4.1.10",
     "node-sass": "^4.5.3",
     "nodemon": "^1.12.1",
     "npm-run-all": "^4.1.1",
+    "postcss-banner": "^3.0.0",
     "postcss-cli": "^4.1.1",
     "stylelint": "^8.2.0",
     "stylelint-config-recommended-scss": "^2.0.0",
