@@ -1,0 +1,12 @@
+/**
+ * ROOT
+ *
+ * Adds CSS color and font-family variables to :root
+ */
+
+
+:root {
+  @each $color, $value in $colors {
+    --#{$color}: #{$value};
+  }
+}

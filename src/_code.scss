@@ -1,0 +1,89 @@
+/**
+ * CODE
+ */
+
+// Inline and block code styles
+code,
+kbd,
+pre,
+samp {
+  font-family: $font-family-monospace;
+}
+
+// Inline code
+code {
+  padding: .2rem .4rem;
+  font-size: .9rem;
+  color: $red;
+  background-color: $gray-100;
+  border-radius: 3px;
+
+  // Streamline the style when inside anchors to avoid broken underline and more
+  a > & {
+    padding: 0;
+    color: inherit;
+    background-color: inherit;
+  }
+}
+
+// User input typically entered via keyboard
+kbd {
+  padding: .2rem .4rem;
+  font-size: .9rem;
+  color: $white;
+  background-color: $gray-900;
+  border-radius: 3px;
+
+  kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: 700;
+  }
+}
+
+// Blocks of code
+pre {
+  display: block;
+  font-size: .9rem;
+  color: $gray-900;
+
+  // Account for some code outputs that place code tags in pre tags
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+// Enable scrollable blocks of code
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+// highlight.js overrides for demo
+.hljs {
+  color: $gray-600;
+  background-color: $light;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: $gray-600;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: $cyan;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: $red;
+}

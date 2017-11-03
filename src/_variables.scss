@@ -2,60 +2,109 @@
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #f8f5f0 !default;
-$gray-300: #dfd7ca !default;
-$gray-400: #ced4da !default;
-$gray-500: #98978b !default;
-$gray-600: #8e8c84 !default;
+$gray-200: #eee !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ccc !default;
+$gray-500: #adb5bd !default;
+$gray-600: #888 !default;
 $gray-700: #495057 !default;
-$gray-800: #3e3f3a !default;
-$gray-900: #212529 !default;
+$gray-800: #333 !default;
+$gray-900: #222 !default;
 $black:    #000 !default;
 
-$blue:    #325d88 !default;
+$blue:    #008cba !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #d9534f !default;
-$orange:  #f47c3c !default;
-$yellow:  #ffc107 !default;
-$green:   #93c54b !default;
+$red:     #f04124 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #e99002 !default;
+$green:   #43ac6a !default;
 $teal:    #20c997 !default;
-$cyan:    #29abe0 !default;
+$cyan:    #5bc0de !default;
 
 $primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$secondary:     $gray-200 !default;
 $success:       $green !default;
 $info:          $cyan !default;
-$warning:       $orange !default;
+$warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-200 !default;
-$dark:          $gray-800 !default;
+$dark:          $gray-900 !default;
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+
+$purpose-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+);
 
 // Body
 
-$body-bg:                   $white !default;
-$body-color:                $gray-800 !default;
+$body-bg: $white !default;
+$body-color: $gray-800 !default;
 
 // Links
-
-$link-color:                $success !default;
+$link-color: $success !default;
 
 // Fonts
 $web-font-path: "https://fonts.googleapis.com/css?family=Roboto:400,500,700" !default;
 @import url($web-font-path);
 
-$font-family-sans-serif:      "Roboto", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif: "Roboto", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace: "SFMono-Regular", menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace !default;
 
-$font-size-base:              .875rem !default;
-$font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                ($font-size-base * .875) !default;
+$font-size-base: 1rem !default;
+$font-size-large: ($font-size-base * 1.25) !default;
+$font-size-small: ($font-size-base * .875) !default;
 
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
-$font-weight-bold:            700 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold:  700 !default;
 
-$font-weight-base:            $font-weight-normal !default;
-$line-height-base:            1.5 !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
 
-$headings-font-weight:        400 !default;
+
+// Spacing
+$spacer: 1rem !default;
+
+// Headings
+$headings-font-weight: 400 !default;
+$headings-font-sizes: (
+  1: $font-size-base * 2.5,
+  2: $font-size-base * 2,
+  3: $font-size-base * 1.75,
+  4: $font-size-base * 1.5,
+  5: $font-size-base * 1.25,
+  6: $font-size-base * 1,
+);
+
+// Grid
+$grid-gutter-size: 1rem;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  small: 24em,
+  medium: 36em,
+  large: 48em,
+  extra-large: 60em,
+);
